@@ -4,11 +4,11 @@ import pyautogui
 
 profile = webdriver.FirefoxProfile()
 profile.set_preference('dom.disable_beforeunload', True)
-browser=webdriver.Firefox(profile)
+browser = webdriver.Firefox(profile)
 
 def get_element_by_class_name(element):
 	try:
-		el=browser.find_element_by_class_name(element)
+		el = browser.find_element_by_class_name(element)
 		return el
 	except:
 		time.sleep(3)
@@ -17,7 +17,7 @@ def get_element_by_class_name(element):
 
 def get_elements_by_class_name(element):
 	try:
-		el=browser.find_elements_by_class_name(element)
+		el = browser.find_elements_by_class_name(element)
 		return el
 	except:
 		time.sleep(3)
@@ -44,7 +44,7 @@ def call():
 def put():
 	a=2
 
-login("mohit7rulez@gmail.com","Helloiamchubakabra@01")
+login("mohit7sucks@gmail.com","Helloiamchubakabra@01")
 init()
 time.sleep(50)
 click("change_amount.png")
